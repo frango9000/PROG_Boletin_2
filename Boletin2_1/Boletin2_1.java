@@ -21,7 +21,7 @@ public class Boletin2_1 {
         float pPagado = scanpPagado.nextFloat();
         System.out.println("Introduce el precio tarifa: ");
         float pTarifa = scanpTarifa.nextFloat();
-        float descuento = 100 - (( pPagado / 100 ) * pTarifa );
+        float descuento = 100 - (( pPagado / pTarifa ) * 100 );
                 
         System.out.println("Descuento: " + descuento + "%");
         
